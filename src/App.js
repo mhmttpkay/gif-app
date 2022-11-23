@@ -36,8 +36,6 @@ function App() {
       alert('Please, write something...')
     }
   }
-  //https://www.youtube.com/watch?v=fSjB_B3qCLk&list=PL3dHQB1OoCaDKZeESurPbURL9Gr4ZMMuS&index=14
-
 
   if (loading) {
     return (<div className='loading'>Loading...</div>)
