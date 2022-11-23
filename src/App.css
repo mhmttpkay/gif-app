@@ -1,38 +1,130 @@
-.App {
+.appDark {
   text-align: center;
+  background-color: #32353B;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appLight {
+  text-align: center;
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button {
+  margin-top: 10px;
+  float: right;
+}
+
+@media screen and (max-width:700px) {
+  .button {
+    margin-bottom: 10px;
+  }
+  .search-area{
+    margin-left: 0px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lightButton {
+
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+
+.darkButton {
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+
+.loading {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.search-area {
+  padding: 10px 0px;
+  margin-left: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-area input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.search-area input:focus {
+  outline: none;
+}
+
+.search-area button {
+  border: 1px solid #ddd;
+  padding: 8px 20px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gif-item {
+  margin-bottom: 10px;
+}
+
+.gif-item img {
+  width: 100%;
+  height: 250px;
+}
+
+.userAreaLight {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.userAreaLight span {
+  font-weight: 700;
+  margin-left: 5px;
+
+}
+
+.userAreaLight span a {
+  color: #808080 !important;
+  text-decoration: none !important;
+}
+
+.userAreaDark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.userAreaDark span {
+  font-weight: 700;
+  margin-left: 5px;
+
+}
+
+.userAreaDark span a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.appDark img{
+border-radius: 5px;
+}
+
+.titleLight {
+  color: #000;
+}
+
+.titleDark {
+  color: #fff;
 }
